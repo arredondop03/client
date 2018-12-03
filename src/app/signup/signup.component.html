@@ -3,10 +3,10 @@
 
  <form (submit)="signup()">
 <label for="familyName">Give your Family a name</label>
-<input id="familyName" name="familyName">
+<input id="familyName" name="familyName" [(ngModel)]="signupUser.familyName">
 
 <div>
-    <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg">
+    <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg" [(ngModel)]="signupUser.profilePicture">
     <label for="profilePicture">Upload your profile picture</label>
 </div>
 
@@ -14,28 +14,28 @@
 
 <label for="name">Name:</label>
 <div>
-  <input id="name" name="firstName"> 
-  <input name="lastName">
+  <input id="name" name="firstName" [(ngModel)]="signupUser."firstName> 
+  <input name="lastName" [(ngModel)]="signupUser.lastName">
 </div>
 
 <label for="email">Email:</label>
-<input id="email" name="email">
+<input id="email" name="email" [(ngModel)]="signupUser.email">
 
 <label for="confirmEmail">Confirm Email:</label>
-<input id="confirmEmail" name="confirmEmail">
+<input id="confirmEmail" name="confirmEmail" [(ngModel)]="signupUser.confirmEmail">
 
 <label for="phone">Phone</label>
-<input id="phone" name="phone">
+<input id="phone" name="phone" [(ngModel)]="signupUser.phone">
 
 <h2>Your Address</h2>
 <label for="address">Address</label>
 
-<input id="address" name="addressStreet">
+<input id="address" name="addressStreet" [(ngModel)]="signupUser.addressStreet">
 <input name="addressContinued">
 
 <div>
-  <input name="city">
-  <input name="state">
+  <input name="city" [(ngModel)]="signupUser.city">
+  <input name="state" [(ngModel)]="signupUser.state">
   <input name="zipCode">
 </div>
 

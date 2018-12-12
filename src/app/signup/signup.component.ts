@@ -15,8 +15,11 @@ export class SignupComponent implements OnInit {
   constructor(private authService: AuthServiceService) { }
 
   signup(){
-    this.authService.login(this.signupUser)
-
+    this.authService.signup(this.signupUser)
+    .subscribe(
+      userObjFromApi =>{this.successCallback(userObjFromApi)},
+      blahErrorThing =>{this.errorCallback(blahErrorThing)}
+    )
   }
 
   successCallback(userObject){

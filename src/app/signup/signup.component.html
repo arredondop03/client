@@ -41,9 +41,11 @@
 
 <h2>Your Access</h2>
 <label for="username">Choose Username</label>
-<input id="username" name="username">
+<input id="username" name="username" [(ngModel)]="signupUser.username">
+
 <label for="password">Choose Password</label>
-<input id="password" name="password">
+<input id="password" name="password" [(ngModel)]="signupUser.password">
+
 <label for="verifyPassword">Verify Password</label>
 <input id="verifyPassword" name="verifyPassword">
 

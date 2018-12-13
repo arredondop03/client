@@ -31,12 +31,12 @@
 <label for="address">Address</label>
 
 <input id="address" name="addressStreet" [(ngModel)]="signupUser.addressStreet">
-<input name="addressContinued">
+<input name="addressContinued" [(ngModel)]="signupUser.addressContinued">
 
 <div>
   <input name="city" [(ngModel)]="signupUser.city">
   <input name="state" [(ngModel)]="signupUser.state">
-  <input name="zipCode">
+  <input name="zipCode" [(ngModel)]="signupUser.zipCode">
 </div>
 
 <h2>Your Access</h2>
@@ -50,7 +50,7 @@
 <input id="verifyPassword" name="verifyPassword">
 
 <div>
-  <input id="terms" name="terms">
+  <input id="terms" name="terms" [(ngModel)]="signupUser.terms">
   <label for="terms">By checking this box you agree to our <a>Terms & Conditions</a></label>
 
 </div>

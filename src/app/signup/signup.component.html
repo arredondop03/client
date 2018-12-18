@@ -35,7 +35,13 @@
 
 <div>
   <input name="city" [(ngModel)]="signupUser.city">
-  <input name="state" [(ngModel)]="signupUser.state">
+
+
+<select name="state" id="state" [(ngModel)]="signupUser.state">
+  <option *ngFor="let state of states" value="{{state}}">{{state}}</option>
+
+</select>
+
   <input name="zipCode" [(ngModel)]="signupUser.zipCode">
 </div>
 

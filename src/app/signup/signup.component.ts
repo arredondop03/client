@@ -1,5 +1,6 @@
  import { Component, OnInit } from '@angular/core';
 import { AuthServiceService } from '../services/auth-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -22,19 +23,23 @@ export class SignupComponent implements OnInit {
   'TX', 'UT', 'VT', 'VA', 'WA', 'WV', 
   'WI', 'WY']
 
-  constructor(private authService: AuthServiceService) { }
+  constructor(private authService: AuthServiceService, public router: Router) { }
 
   signup(){
 
     this.authService.signup(this.signupUser)
     .subscribe(
-      userObjFromApi =>{this.successCallback(userObjFromApi)},
+      userObjFromApi =>{
+        this.successCallback(userObjFromApi)
+        this.router.navigate(['/'])
+      
+      },
       blahErrorThing =>{this.errorCallback(blahErrorThing)}
     )
   }
 
+ 
   successCallback(userObject){
-    console.log('=-=-=-=-=-=-=-=-=-=-=-',userObject);
     this.theActualuser = userObject
     this.theError = ''
   }

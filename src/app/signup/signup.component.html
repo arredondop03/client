@@ -8,7 +8,18 @@
 <div>
     <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg" [(ngModel)]="signupUser.profilePicture">
     <label for="profilePicture">Upload your profile picture</label>
-</div>
+</div> 
+
+
+
+
+
+<input
+  type="hidden"
+  role="uploadcare-uploader"
+  name="content" />
+
+
 
 <h2>Your Contact Information</h2>
 
@@ -66,6 +77,6 @@
 
 
 
- </form>
+ </form> 
 
 

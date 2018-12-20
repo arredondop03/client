@@ -3,7 +3,7 @@
 
  <form (submit)="signup()">
 <label for="familyName">Give your Family a name</label>
-<input id="familyName" name="familyName" [(ngModel)]="signupUser.familyName">
+<input id="familyName" name="familyName"  type="text" [(ngModel)]="signupUser.familyName">
 
 <div>
     <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg" [(ngModel)]="signupUser.profilePicture">
@@ -11,13 +11,10 @@
 </div> 
 
 
-
-
-
-<input
+<!-- <input
   type="hidden"
   role="uploadcare-uploader"
-  name="content" />
+  name="content" /> -->
 
 
 
@@ -25,27 +22,27 @@
 
 <label for="name">Name:</label>
 <div>
-  <input id="name" name="firstName" [(ngModel)]="signupUser.firstName"> 
-  <input name="lastName" [(ngModel)]="signupUser.lastName">
+  <input id="name" name="firstName" type="text" [(ngModel)]="signupUser.firstName"> 
+  <input name="lastName" type="text" [(ngModel)]="signupUser.lastName">
 </div>
 
 <label for="email">Email:</label>
-<input id="email" name="email" [(ngModel)]="signupUser.email">
+<input id="email" name="email" type="email" [(ngModel)]="signupUser.email">
 
 <label for="confirmEmail">Confirm Email:</label>
-<input id="confirmEmail" name="confirmEmail" [(ngModel)]="signupUser.confirmEmail">
+<input id="confirmEmail" name="confirmEmail" type="email" [(ngModel)]="signupUser.confirmEmail">
 
 <label for="phone">Phone</label>
-<input id="phone" name="phone" [(ngModel)]="signupUser.phone">
+<input id="phone" name="phone" type="number" [(ngModel)]="signupUser.phone">
 
 <h2>Your Address</h2>
 <label for="address">Address</label>
 
-<input id="address" name="addressStreet" [(ngModel)]="signupUser.addressStreet">
-<input name="addressContinued" [(ngModel)]="signupUser.addressContinued">
+<input id="address" name="addressStreet" type="text" [(ngModel)]="signupUser.addressStreet">
+<input name="addressContinued" type="text" [(ngModel)]="signupUser.addressContinued">
 
 <div>
-  <input name="city" [(ngModel)]="signupUser.city">
+  <input name="city" type="text" [(ngModel)]="signupUser.city">
 
 
 <select name="state" id="state" [(ngModel)]="signupUser.state">
@@ -53,21 +50,21 @@
 
 </select>
 
-  <input name="zipCode" [(ngModel)]="signupUser.zipCode">
+  <input name="zipCode" type="number" [(ngModel)]="signupUser.zipCode">
 </div>
 
 <h2>Your Access</h2>
 <label for="username">Choose Username</label>
-<input id="username" name="username" [(ngModel)]="signupUser.username">
+<input id="username" name="username" type="text" [(ngModel)]="signupUser.username">
 
 <label for="password">Choose Password</label>
-<input id="password" name="password" [(ngModel)]="signupUser.password">
+<input id="password" name="password" type="password" [(ngModel)]="signupUser.password">
 
 <label for="verifyPassword">Verify Password</label>
-<input id="verifyPassword" name="verifyPassword">
+<input id="verifyPassword" type="password" name="verifyPassword">
 
 <div>
-  <input id="terms" name="terms" [(ngModel)]="signupUser.terms">
+  <input id="terms" name="terms" type="checkbox" [(ngModel)]="signupUser.terms">
   <label for="terms">By checking this box you agree to our <a>Terms & Conditions</a></label>
 
 </div>

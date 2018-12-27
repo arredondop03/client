@@ -1,0 +1,233 @@
+h1{  
+  font-family: HelveticaNeue;
+  font-size: 50px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.23;
+  letter-spacing: normal;
+  text-align: center;
+  color: #3b3b3b;
+}
+
+h2{
+  font-family: HelveticaNeue;
+  font-size: 44px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.02;
+  letter-spacing: normal;
+  color: rgb(0, 0, 0);
+}
+
+h3{
+  font-family: HelveticaNeue;
+  font-size: 34px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+h4{
+  font-family: HelveticaNeue;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+h5{
+  font-family: HelveticaNeue;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+p{
+  font-family: HelveticaNeue;
+  font-size: 34px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000000;
+}
+
+
+.hero-component{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 200px 0;
+  background-image: url('/assets/images/mom-daughter-looking-each-other.jpg');
+  background-size: cover;
+  position: relative;
+ 
+}
+
+.hero-component-layer{
+  /* background-color: rgba(237, 223, 213,0.7); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.search-component{
+  display: flex;
+  justify-content: space-around;
+  padding: 100px 0;
+}
+
+.steps-component{
+
+  padding: 70px 0;
+  background-color: rgba(86, 207, 226, 0.16);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reviews-component{
+  padding: 70px 25px;
+  display: flex;
+}
+
+.donation-component{
+  height: 617px;
+  background-color:rgba(253, 15, 71, 0.08);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 200px;
+}
+
+.event-component{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 100px 0;
+}
+
+
+.footer{
+  position: relative;
+  height: 429.5px;
+  background-color: rgba(247, 202, 21, 0.22);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links-copyright{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links a{
+  margin: 0 30px;
+
+}
+
+.footer img{
+  height: 160px;
+  position: absolute;
+  top: 28%;
+  left: 6%;
+}
+
+.footer button{
+  width: 172px;
+}
+
+
+.search-section{
+max-width: 600px;
+padding: 0px 60px;
+}
+
+.steps-icons{
+display: flex;
+}
+.steps-icons img{
+  height: 90px;
+}
+
+.each-step{
+  max-width: 170px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.each-review{
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+}
+
+.each-review h5{
+  padding: 0 0 0 50px;
+  text-align: center;
+}
+
+.event-component img {
+  height: 250px;
+}
+
+.event-component h2{
+  text-align: center;
+  max-width: 580px;
+  margin-right: 50px;
+}
+
+.button{
+  width: 224px;
+  height: 54px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+}
+
+.button-red{
+  background-color: #fd0f47 ;
+}
+.button-green{
+  background-color: #8dc63f ;
+}
+.button-purple{
+  background-color: #af5aaf ;
+}
+
+.button-link{
+  width: 190px;
+  height: 24px;
+  font-family: HelveticaNeue;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}

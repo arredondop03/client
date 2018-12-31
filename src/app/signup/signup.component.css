@@ -1,0 +1,199 @@
+h1{
+  font-family: HelveticaNeue;
+  font-size: 46px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  color: coral;
+}
+
+p{
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(86, 86, 86);
+}
+
+label{
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(119, 119, 119);
+}
+
+input{
+  width: auto;
+  height: 60px;
+  border-radius: 4.5px;
+  background-color: rgb(255, 255, 255);
+  font-family: Lato;
+  font-size: 20px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.17;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(119, 119, 119);
+  padding: 0 20px;
+  margin: 14px 0 24px 0;
+  border: solid;
+  
+}
+
+h2{
+  font-family: Helvetica;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(86, 86, 86);
+}
+
+button{
+  width: 142px;
+  height: 54px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: rgb(175, 90, 175);
+  font-family: HelveticaNeue;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 60px;
+  border: 0px;
+
+}
+
+a{
+  font-family: HelveticaNeue;
+  font-size: 27px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(20, 158, 180);
+}
+
+form{
+  padding-top: 50px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: Lato;
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(204, 204, 204);
+  opacity: 1; /* Firefox */
+}
+
+hr{
+  width: 100vw;
+  margin-left: -250px;
+  /* box-shadow: 0 -2px 2px 0 rgba(183, 183, 183, 0.5); */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  font-family: Lato;
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(204, 204, 204);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  font-family: Lato;
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.2;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgb(204, 204, 204);
+}
+
+.hero-component{
+  padding: 145px 0;
+  background-color: antiquewhite;
+}
+
+.form-component{
+  padding: 36px 250px;
+}
+
+.label-w-input{
+  display: flex;
+  flex-direction: column;
+}
+
+.two-input{
+  width: 390px;
+}
+
+.three-input{
+  width: 290px;
+}
+
+.state-option{
+  width: 102px;
+  height: 60px;
+  margin: 14px 0 24px 0;
+}
+
+.multiple-inputs-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+#terms{
+  width: auto;
+  height: auto;
+  margin-right: 15px;
+}
+
+.terms-and-conditions{
+  margin: 50px 0 80px 0;
+}
+
+.terms-and-conditions label{
+  font-size: 27px;
+}
+
+.submit-cancel-buttons{
+  display: flex;
+  align-items: center; 
+  padding: 60px 0;
+}
+

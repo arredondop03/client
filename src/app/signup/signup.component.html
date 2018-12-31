@@ -1,71 +1,110 @@
-<p>An account is needed to save your information during
- your aplication process.</p>
+<app-nav-bar></app-nav-bar>
 
- <form (submit)="signup()">
-<label for="familyName">Give your Family a name</label>
-<input id="familyName" name="familyName"  type="text" [(ngModel)]="signupUser.familyName">
 
-<div>
-    <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg" [(ngModel)]="signupUser.profilePicture">
-    <label for="profilePicture">Upload your profile picture</label>
-</div> 
 
-<h2>Your Contact Information</h2>
+<div class="hero-component">
 
-<label for="name">Name:</label>
-<div>
-  <input id="name" name="firstName" type="text" [(ngModel)]="signupUser.firstName"> 
-  <input name="lastName" type="text" [(ngModel)]="signupUser.lastName">
+  
+  <h1>Create a DotKids account</h1>
+  
 </div>
 
-<label for="email">Email:</label>
-<input id="email" name="email" type="email" [(ngModel)]="signupUser.email">
-
-<label for="confirmEmail">Confirm Email:</label>
-<input id="confirmEmail" name="confirmEmail" type="email" [(ngModel)]="signupUser.confirmEmail">
-
-<label for="phone">Phone</label>
-<input id="phone" name="phone" type="number" [(ngModel)]="signupUser.phone">
-
-<h2>Your Address</h2>
-<label for="address">Address</label>
-
-<input id="address" name="addressStreet" type="text" [(ngModel)]="signupUser.addressStreet">
-<input name="addressContinued" type="text" [(ngModel)]="signupUser.addressContinued">
-
-<div>
-  <input name="city" type="text" [(ngModel)]="signupUser.city">
 
 
-<select name="state" id="state" [(ngModel)]="signupUser.state">
-  <option *ngFor="let state of states" value="{{state}}">{{state}}</option>
+<div class="form-component">
 
-</select>
+  <p>An account is needed to save your information during
+    your aplication process.</p>
 
-  <input name="zipCode" type="number" [(ngModel)]="signupUser.zipCode">
+  <form (submit)="signup()">
+
+    <div class="label-w-input">
+      <label for="familyName">Give your Family a name</label>
+      <input id="familyName" name="familyName" type="text" placeholder="Example: Smith's Family" [(ngModel)]="signupUser.familyName">
+    </div>
+
+
+
+    <!-- <div>
+      <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg" [(ngModel)]="signupUser.profilePicture">
+      <label for="profilePicture">Upload your profile picture</label>
+    </div> -->
+
+    <h2>Your Contact Information</h2>
+
+    <div class="label-w-input">
+      <label for="name">Name:</label>
+      <div class="multiple-inputs-container">
+        <input id="name" name="firstName" type="text" placeholder="First Name" class="two-input" [(ngModel)]="signupUser.firstName">
+        <input name="lastName" type="text" placeholder="Last Name" class="two-input" [(ngModel)]="signupUser.lastName">
+      </div>
+    </div>
+      
+    <div class="label-w-input">
+      <label for="email">Email:</label>
+      <input id="email" name="email" type="email" placeholder="example@gmail.com" [(ngModel)]="signupUser.email">
+    </div>
+
+    <div class="label-w-input">
+      <label for="confirmEmail">Confirm Email:</label>
+      <input id="confirmEmail" name="confirmEmail" type="email" placeholder="example@gmail.com" [(ngModel)]="signupUser.confirmEmail">
+    </div>
+
+    <div class="label-w-input">
+      <label for="phone">Phone</label>
+      <input id="phone" name="phone" type="number" placeholder="+1 (123) 456 - 7890" [(ngModel)]="signupUser.phone">
+    </div>
+
+    <h2>Your Address</h2>
+
+    <div class="label-w-input">
+
+      <label for="address">Address</label>
+      
+      <input id="address" name="addressStreet" type="text" placeholder="Street Address" [(ngModel)]="signupUser.addressStreet">
+      <input name="addressContinued" type="text" placeholder="Address continued" [(ngModel)]="signupUser.addressContinued">
+      
+      <div class="multiple-inputs-container">
+        <input name="city" type="text" placeholder="City" class="three-input" [(ngModel)]="signupUser.city">
+        <select name="state" id="state" class="state-option" [(ngModel)]="signupUser.state">
+          <option *ngFor="let state of states" value="{{state}}">{{state}}</option>
+        </select>
+        <input name="zipCode" type="number" placeholder="Zip Code" class="three-input" [(ngModel)]="signupUser.zipCode">
+      </div>  
+
+    </div
+    >
+    <h2>Your Access</h2>
+
+    <div class="label-w-input">
+      <label for="username">Choose Username</label>
+      <input id="username" name="username" type="text" placeholder="JohnSmith01" [(ngModel)]="signupUser.username">
+    </div>
+
+    <div class="label-w-input">
+      <label for="password">Choose Password</label>
+      <input id="password" name="password" type="password" placeholder="*********" [(ngModel)]="signupUser.password">
+    </div>
+
+    <div class="label-w-input"> 
+      <label for="verifyPassword">Verify Password</label>
+      <input id="verifyPassword" type="password" placeholder="*********" name="verifyPassword">
+    </div>
+      
+
+    <div class="terms-and-conditions">
+      <input id="terms" name="terms" type="checkbox" [(ngModel)]="signupUser.terms">
+      <label for="terms">By checking this box you agree to our <a>Terms & Conditions</a></label>
+    </div>
+
+    <hr>
+
+    <div class="submit-cancel-buttons">
+      <button action="submit">SUBMIT</button>
+      <a>Cancel</a>
+    </div>
+
+  </form>
+
+
 </div>
-
-<h2>Your Access</h2>
-<label for="username">Choose Username</label>
-<input id="username" name="username" type="text" [(ngModel)]="signupUser.username">
-
-<label for="password">Choose Password</label>
-<input id="password" name="password" type="password" [(ngModel)]="signupUser.password">
-
-<label for="verifyPassword">Verify Password</label>
-<input id="verifyPassword" type="password" name="verifyPassword">
-
-<div>
-  <input id="terms" name="terms" type="checkbox" [(ngModel)]="signupUser.terms">
-  <label for="terms">By checking this box you agree to our <a>Terms & Conditions</a></label>
-
-</div>
-
-<button action="submit">SUBMIT</button>
-<a>Cancel</a>
-
-
-
- </form> 
-
-

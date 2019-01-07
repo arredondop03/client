@@ -1,72 +1,50 @@
 h1{  
-  font-family: HelveticaNeue;
   font-size: 50px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.23;
-  letter-spacing: normal;
-  text-align: center;
   color: #3b3b3b;
 }
 
 h2{
-  font-family: HelveticaNeue;
   font-size: 44px;
   font-weight: 500;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.02;
-  letter-spacing: normal;
   color: rgb(0, 0, 0);
 }
 
 h3{
-  font-family: HelveticaNeue;
   font-size: 34px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
   color: #000000;
 }
 
 h4{
-  font-family: HelveticaNeue;
+
   font-size: 20px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.25;
-  letter-spacing: normal;
-  text-align: center;
   color: #4a4a4a;
 }
 
 h5{
-  font-family: HelveticaNeue;
+
   font-size: 20px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.2;
-  letter-spacing: normal;
-  text-align: center;
   color: #4a4a4a;
 }
 
 p{
-  font-family: HelveticaNeue;
   font-size: 34px;
   font-weight: 300;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
   color: #000000;
+}
+
+.text{
+  font-family: HelveticaNeue;
+  text-align: center;
 }
 
 
@@ -82,7 +60,6 @@ p{
 }
 
 .hero-component-layer{
-  /* background-color: rgba(237, 223, 213,0.7); */
     position: absolute;
     top: 0;
     left: 0;
@@ -188,7 +165,6 @@ display: flex;
 
 .each-review h5{
   padding: 0 0 0 50px;
-  text-align: center;
 }
 
 .event-component img {
@@ -196,7 +172,6 @@ display: flex;
 }
 
 .event-component h2{
-  text-align: center;
   max-width: 580px;
   margin-right: 50px;
 }
@@ -206,6 +181,7 @@ display: flex;
   height: 54px;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  border: 0px;
 }
 
 .button-red{
@@ -224,10 +200,7 @@ display: flex;
   font-family: HelveticaNeue;
   font-size: 20px;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.25;
-  letter-spacing: normal;
   text-align: left;
   color: #ffffff;
 }

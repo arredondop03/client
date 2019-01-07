@@ -1,34 +1,22 @@
 <app-nav-bar></app-nav-bar>
 
 
-
 <div class="hero-component">
 
-  
-  <h1>Create a DotKids account</h1>
-  
+  <h1>Create a DotKids account</h1>  
 </div>
-
-
 
 <div class="form-component">
 
   <p>An account is needed to save your information during
     your aplication process.</p>
 
-  <form (submit)="signup()">
+  <form (ngSubmit)="signup()" #signupForm = 'ngForm'>
 
     <div class="label-w-input">
       <label for="familyName">Give your Family a name</label>
       <input id="familyName" name="familyName" type="text" placeholder="Example: Smith's Family" [(ngModel)]="signupUser.familyName">
     </div>
-
-
-
-    <!-- <div>
-      <input type="file" id="profilePicture" name="profilePicture" accept="image/png, image/jpeg" [(ngModel)]="signupUser.profilePicture">
-      <label for="profilePicture">Upload your profile picture</label>
-    </div> -->
 
     <h2>Your Contact Information</h2>
 
@@ -88,7 +76,7 @@
 
     <div class="label-w-input"> 
       <label for="verifyPassword">Verify Password</label>
-      <input id="verifyPassword" type="password" placeholder="*********" name="verifyPassword">
+      <input id="verifyPassword" type="password" placeholder="*********" name="verifyPassword" [(ngModel)]="signupUser.verifyPassword">
     </div>
       
 
@@ -100,8 +88,8 @@
     <hr>
 
     <div class="submit-cancel-buttons">
-      <button action="submit">SUBMIT</button>
-      <a>Cancel</a>
+      <button action="submit"  [disabled]="!signupForm.form.valid" >SUBMIT</button>
+      <a a routerLink="/" routerLinkActive="active" >Cancel</a>
     </div>
 
   </form>

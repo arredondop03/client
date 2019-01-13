@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // this is to use ngmodule in forms
-import { HttpModule } from '@angular/http'; // this is to make http requests
+import { HttpClientModule } from '@angular/common/http'; // this is to make http requests
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home-page/home-page.component';
@@ -20,7 +20,7 @@ import { UcWidgetModule } from 'ngx-uploadcare-widget';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule,
+    HttpClientModule,
     AppRoutingModule,
     UcWidgetModule
   ],
@@ -28,4 +28,4 @@ import { UcWidgetModule } from 'ngx-uploadcare-widget';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-  
+
